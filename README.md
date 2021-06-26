@@ -1,67 +1,76 @@
-SCSS Masterclass
+# SCSS Masterclass
+
 (S)CSS Layout Masterclass: Flexbox & Grid
 
-Flexbox:
-flex-direction
-order
-justify-content
-align-items
-align-self
-flex-wrap
-align-content
-flex-grow
-flex-shrink
-flex-basis
-Grid:
-grid-template-columns
-grid-template-rows
-column-gap
-row-gap
-gap
-grid-template-areas
-grid-column-start
-grid-column-end
-grid-row-start
-grid-row-end
-grid-column
-grid-row
-grid-template
-justify-items
-align-items
-place-items
-justify-content
-align-content
-place-content
-justify-self
-align-self
-place-self
-grid-auto-rows
-grid-auto-flow
-grid-auto-columns
-Keywords & Functions:
-repeat
-fr
-minmax
-auto-fit
-auto-fill
-min-content
-max-content
-SCSS:
-Variables
-Nesting
-Partials
-Mixins
-Extend
-Responsive Mixins
-To Clone:
-https://besthorrorscenes.com/
-https://paint-box.com/
-http://10x19.co/
-http://www.z-o-o.fr/
-https://schwartzmedia.com.au/
-https://tolv.dk/
-https://rodicdavidson.co.uk/
-https://beige.de/
-http://donicaida.com/
-https://canalstreet.market/
-https://wonhundred.com/
+## Flexbox:
+
+- [x] flex-direction
+- [x] order
+- [x] justify-content
+- [x] align-items
+- [x] align-self
+- [x] flex-wrap
+- [x] align-content
+- [x] flex-grow
+- [x] flex-shrink
+- [x] flex-basis
+
+## Grid:
+
+- [x] grid-template-columns
+- [x] grid-template-rows
+- [x] column-gap
+- [x] row-gap
+- [x] gap
+- [x] grid-template-areas
+- [x] grid-column-start
+- [x] grid-column-end
+- [x] grid-row-start
+- [x] grid-row-end
+- [x] grid-column
+- [x] grid-row
+- [x] grid-template
+- [x] justify-items
+- [x] align-items
+- [x] place-items
+- [x] justify-content
+- [x] align-content
+- [x] place-content
+- [x] justify-self
+- [x] align-self
+- [x] place-self
+- [x] grid-auto-rows
+- [x] grid-auto-flow
+- [x] grid-auto-columns
+
+### Keywords & Functions:
+
+- [x] repeat
+- [x] fr
+- [x] minmax
+- [x] auto-fit
+- [x] auto-fill
+- [x] min-content
+- [x] max-content
+
+## SCSS:
+
+- [x] Variables
+- [x] Nesting
+- [x] Mixins
+- [x] Extend
+- [x] Responsive Mixins
+
+## To Clone:
+
+- [x] [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
+- [x] [https://paint-box.com/](https://paint-box.com/)
+- [x] [http://10x19.co/](http://10x19.co/)
+- [x] [http://www.z-o-o.fr/](http://www.z-o-o.fr/)
+- [x] [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
+- [x] [https://tolv.dk/](https://tolv.dk/)
+- [x] [https://rodicdavidson.co.uk/](https://rodicdavidson.co.uk/)
+- [x] [https://beige.de/](https://beige.de/)
+- [x] [http://donicaida.com/](http://donicaida.com/)
+- [x] [https://canalstreet.market/](https://canalstreet.market/)
+- [x] [https://wonhundred.com/](https://wonhundred.com/)
