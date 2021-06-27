@@ -8,9 +8,9 @@ sass.compiler = require("node-sass");
 
 const routes = {
   css: {
-    watch: "BestHorrorScene/src/scss/*",
-    src: "BestHorrorScene/src/scss/styles.scss",
-    dest: "BestHorrorScene/dist/css",
+    watch: "PaintBox/src/scss/*",
+    src: "PaintBox/src/scss/styles.scss",
+    dest: "PaintBox/dist/css",
   },
 };
 
