@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import "_extends";
+* {
+  box-sizing: border-box;
+}
+header {
+  z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  min-width: 700px;
+  width: 100vw;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2vh 5%;
+  font-size: 1rem;
+  & > * {
+    align-self: center;
+  }
+  ul {
+    display: flex;
+    li {
+      margin-left: 20px;
+    }
+  }
+  .main__name {
+    place-self: center center;
+    font-family: "Big Shoulders Stencil Display", cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    div {
+      transform: rotateZ(-15deg);
+      margin: 0px 3px;
+    }
+  }
+  span {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+body {
+  font-family: "Viaoda Libre", cursive;
+  .poster {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    img {
+      width: 50vw;
+      height: 100vh;
+    }
+    .text {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @extend %text__property;
+      .text {
+        margin-bottom: 0.3vh;
+      }
+      .subtext {
+        @extend %url__property;
+      }
+    }
+  }
+}
+.text__panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #efcb56;
+  height: 80vh;
+  width: 100%;
+  padding: 10% 25%;
+  @extend %text__property;
+  p {
+    margin: 5vh 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  h6 {
+    @extend %url__property;
+  }
+}
+.sofa__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 50vh);
+  grid-template-rows: repeat(2, 25vw);
+  img {
+    transition: all 0.2s linear;
+    &:hover {
+      overflow: hidden;
+      filter: blur(10px);
+    }
+    width: 100%;
+    height: 100%;
+  }
+  img:nth-child(1),
+  img:nth-child(5) {
+    grid-column-start: span 2;
+  }
+}
+footer {
+  background: #535851;
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 8vh 5vw;
+  height: 50vh;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    @extend %url__property;
+    li:first-child {
+      opacity: 0.5;
+      padding-bottom: 2vh;
+    }
+    li {
+      font-weight: 200;
+      margin-bottom: 1.2vh;
+    }
+  }
+}
