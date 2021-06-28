@@ -1,0 +1,5 @@
+@mixin page($color) {
+  text-decoration: none;
+  display: block;
+  color: $color;
+}
