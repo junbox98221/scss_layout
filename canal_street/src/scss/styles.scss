@@ -1,0 +1,126 @@
+@import "_extends";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+  @extend %sub__font;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+body {
+  width: 90vw;
+  height: 600vh;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  & > *:not(section:nth-child(2)) {
+    padding: 0 4vw;
+  }
+  section {
+    @extend %main__font;
+  }
+  section:nth-child(1) {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 5.4rem;
+  }
+  section:nth-child(2) {
+    height: 130vh;
+  }
+  section:nth-child(3) {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+    h1 {
+      display: flex;
+      align-content: center;
+      width: 40vw;
+      font-size: 7rem;
+    }
+  }
+  section:nth-child(4) {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    .home__column__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 80vh 20vh;
+      column-gap: 4vw;
+      .home__column {
+        img {
+          height: 60vh;
+          width: 100%;
+        }
+        display: flex;
+        flex-direction: column;
+        p {
+          line-height: 3vh;
+          @extend %sub__font;
+          margin-top: 5vh;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  section:nth-child(5) {
+  }
+}
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  ul {
+    display: flex;
+    li {
+      width: 3vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      .category {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        writing-mode: vertical-lr;
+        font-size: 1.2rem;
+        margin: auto;
+      }
+      .chinese {
+        margin-top: 10vh;
+      }
+    }
+    li:nth-child(1) {
+      background: #5ea3ec;
+    }
+    li:nth-child(2) {
+      background: #f64444;
+    }
+    li:nth-child(3) {
+      background: #ffb400;
+    }
+  }
+}
+.logo {
+  position: fixed;
+  top: 8vh;
+  left: 5vw;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  width: 8vh;
+  height: 8vh;
+}

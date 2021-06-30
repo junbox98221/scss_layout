@@ -8,9 +8,9 @@ sass.compiler = require("node-sass");
 
 const routes = {
   css: {
-    watch: "tolv/src/scss/*",
-    src: "tolv/src/scss/styles.scss",
-    dest: "tolv/dist/css",
+    watch: "canal_street/src/scss/*",
+    src: "canal_street/src/scss/styles.scss",
+    dest: "canal_street/dist/css",
   },
 };
 
